@@ -1,0 +1,33 @@
+.navbar-custom {
+  background-color: #fdf9f0;
+  border-bottom: 2px solid #40866e !important;
+  padding: 100px 20px 100px 20px;
+}
+
+#nav-sig {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #40866e;
+  font-size: 100px;
+}
+
+.nav-item {
+  padding: 30px;
+}
+
+.custom-nav-link {
+  padding: 20px 20px 0px 20px;
+  font-family: "Prata", serif;
+  align-self: center;
+  transition: all 0.5s ease;
+  color: #40866e;
+
+}
+
+.custom-nav-link:hover {
+  background-color: #40866e;
+  color: #fdf9f0;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
