@@ -1,6 +1,6 @@
 .navbar-custom {
-  background-color: #fdf9f0;
-  border-bottom: 2px solid #40866e !important;
+  background-color: #F0E5D9;
+  border-bottom: 2px solid #299287 !important;
   padding: 100px 20px 100px 20px;
 }
 
@@ -8,7 +8,7 @@
   font-family: "Prata", serif;
   font-weight: 400;
   font-style: normal;
-  color: #40866e;
+  color: #299287;
   font-size: 100px;
 }
 
@@ -21,13 +21,48 @@
   font-family: "Prata", serif;
   align-self: center;
   transition: all 0.5s ease;
-  color: #40866e;
+  color: #299287;
 
 }
 
 .custom-nav-link:hover {
-  background-color: #40866e;
-  color: #fdf9f0;
+  background-color: #299287;
+  color: #F0E5D9;
   border-radius: 15px;
   padding: 10px 15px;
+}
+
+.section-container {
+  display: flex;
+  height: 100vh;
+}
+.left-section {
+  position: sticky;
+  top: 0;
+  width: 50%;
+  background-color: #F0E5D9;
+  padding: 20px;
+}
+
+.summary-info {
+  padding: 50px;
+  color: #299287;
+}
+
+.buttons-container {
+  padding: 0px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-button {
+  text-decoration: none;
+  color: #299287;
+}
+
+.right-section {
+  width: 50%;
+  padding: 20px;
+  overflow-y: auto; /* Allows scrolling */
+  background-color: #F0E5D9;
 }
