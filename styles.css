@@ -1,15 +1,16 @@
 .navbar-custom {
   background-color: #F7F5F2;
   border-bottom: 1px solid #273B4A !important;
-  padding: 60px 20px 60px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 #nav-sig {
-  font-family: "Montserrat", serif;
-  font-weight: 400;
+  font-family: 'Clash Display', 'Helvetica';
+  font-weight: 450;
   font-style: normal;
   color: #273B4A;
-  font-size: 100px;
+  font-size: 120px;
+  letter-spacing: 0.05em;
 }
 
 .nav-item {
@@ -18,7 +19,7 @@
 
 .custom-nav-link {
   padding: 20px 20px 0px 20px;
-  font-family: "Prata", serif;
+  font-family: 'Montserrat', 'Helvetica';
   align-self: center;
   transition: all 0.5s ease;
   color: #273B4A;
@@ -77,21 +78,50 @@
   width: 100%;
   background-color: #C5D1E4;
   color: #273B4A;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', 'Helvetica';
   padding: 5px 0px 5px 70px;
 }
 
+.topics {
+  display: flex;
+  padding-left: 30%;
+}
+
+ul.custom-bullets {
+  list-style: none; /* Remove default bullets */
+  padding-left: 20px; /* Adjust as needed */
+}
+
+ul.custom-bullets li {
+  position: relative;
+  padding-left: 20px; /* Adjust as needed */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+ul.custom-bullets li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.2em; /* Adjust size */
+  height: 0.2em; /* Adjust size */
+  background-color: #aaa; /* Adjust color */
+  border-radius: 50%; /* Make it round */
+}
+
 p {
+  font-family: 'Montserrat', 'Helvetica';
   padding-left: 30%;
   color: #273B4A;
 }
 
 h2 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', 'Helvetica';
   color: #273B4A;
 }
 
 h3 {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', 'Helvetica';
   color: #273B4A;
 }
