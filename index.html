@@ -43,16 +43,17 @@
     </div>
 </nav>
 
-    <div id="contactInfo" style="display: none; width: 100%; background-color: #f7f5f2; position: fixed; top: 0; left: 0; transform: translateY(-100%); transition: transform 0.5s ease-in-out; z-index: 999;">
-      <div style="padding: 20px;">
-          <h2>Contact Information</h2>
-          <p>Email: daniel@example.com</p>
-          <p>Phone: +1234567890</p>
-          <p>Address: 123 Main St, City, Country</p>
-      </div>
-    </div>
 
   <div class="page-container">
+
+    <div id="overlay">
+      <div class="hidden-elements">
+        <h4><img src="envelope.png" alt="Icon"> Email: daniel@example.com</h4>
+        <h4><img src="phone.png" alt="icon">Phone: +1234567890</h4>
+    </div>
+    </div>
+
+
     <div class="top-section">
       <div class="top-left">
         <h2>Hi, I'm Danny.</h2>
@@ -221,24 +222,23 @@
 
   </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          var contactLink = document.getElementById('contactLink');
-          contactLink.addEventListener('click', function(event) {
-              event.preventDefault(); // Prevent the default action
-              console.log('Link was clicked!');
-              var contactInfo = document.getElementById("contactInfo");
-              // Toggle visibility
-              if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
-                  contactInfo.style.display = "block";
-                  contactInfo.style.transform = "translateY(0%)"; // Show
-              } else {
-                  contactInfo.style.display = "none";
-                  contactInfo.style.transform = "translateY(-100%)"; // Hide
-              }
-          });
-      });
-    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactLink = document.getElementById('contactLink');
+        var overlay = document.getElementById('overlay');
+
+        contactLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('Link was clicked!');
+            if (overlay.style.display === 'none' || overlay.style.display === '') {
+                overlay.style.display = 'block';
+            } else {
+                overlay.style.display = 'none';
+            }
+        });
+    });
+  </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

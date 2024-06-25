@@ -41,9 +41,44 @@
   background-color: #F7F5F2;
   padding: 20px;
 }
+
+#contactInfo {
+  width: 100%;
+  padding-top: 200px;
+
+}
+
+/* #contactInfo.reveal {
+
+} */
+
+#overlay {
+  position: fixed; /* Use fixed to keep it in place */
+  top: 60px; /* Adjust this value based on your navbar height */
+  left: 0;
+  width: 100%;
+  height: 400px; /* Adjust as needed */
+  background-color: #C5D1E4;
+  background-image: url('top-graphic.png'); /* Ensure this path is correct */
+  background-size: cover; /* Ensure the background image covers the div */
+  padding: 20px;
+  z-index: 999; /* Ensure it is above other content but below the navbar */
+  font-weight: bold;
+  color: black;
+  display: none; /* Hidden by default */
+}
+
+.hidden-elements {
+  padding-top: 300px !important;
+  font-weight: bold !important;
+  color: #273B4A !important;
+}
+
 .top-section {
   display: flex;
   padding-top: 200px;
+  position: relative;
+  z-index: 1;
 }
 
 .top-left {
@@ -138,27 +173,16 @@ h5 {
   font-weight: bolder;
 }
 
+h4 {
+  font-family: 'Montserrat', 'Helvetica';
+  padding-left: 60px;
+  color: #273B4A;
+  font-weight: bold;
+}
+
 h6 {
   font-family: 'Montserrat', 'Helvetica';
   padding-left: 30%;
   color: #273B4A;
   font-weight: bold;
-}
-
-#contactInfo {
-  width: 100%;
-  background-color: #f7f5f2;
-  position: absolute;
-  top: 100%; /* Positioned right below the navbar */
-  left: 0;
-  top: 1000px;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease-in-out;
-  z-index: 999;
-  display: none;
-}
-
-#contactInfo.reveal {
-  transform: translateY(0%);
-  display: block;
 }
