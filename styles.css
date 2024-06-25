@@ -48,16 +48,12 @@
 
 }
 
-/* #contactInfo.reveal {
-
-} */
-
 #overlay {
   position: fixed; /* Use fixed to keep it in place */
   top: 60px; /* Adjust this value based on your navbar height */
   left: 0;
   width: 100%;
-  height: 400px; /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
   background-color: #C5D1E4;
   background-image: url('top-graphic.png'); /* Ensure this path is correct */
   background-size: cover; /* Ensure the background image covers the div */
