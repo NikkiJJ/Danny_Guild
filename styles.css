@@ -49,25 +49,56 @@
 }
 
 #overlay {
-  position: fixed; /* Use fixed to keep it in place */
-  top: 60px; /* Adjust this value based on your navbar height */
+  position: fixed;
+  top: 60px;
   left: 0;
   width: 100%;
-  height: 600px; /* Adjust as needed */
+  height: 600px;
   background-color: #C5D1E4;
-  background-image: url('top-graphic.png'); /* Ensure this path is correct */
-  background-size: cover; /* Ensure the background image covers the div */
+  background-image: url('top-graphic.png');
+  background-size: cover;
   padding: 20px;
-  z-index: 999; /* Ensure it is above other content but below the navbar */
+  z-index: 999;
   font-weight: bold;
   color: black;
-  display: none; /* Hidden by default */
+  display: none;
 }
 
+#reference-overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-color: #C5D1E4;
+  background-image: url('top-graphic.png');
+  background-size: cover;
+  padding: 20px;
+  z-index: 999;
+  color: #273B4A;
+  display: none;
+}
+
+
 .hidden-elements {
-  padding-top: 300px !important;
-  font-weight: bold !important;
+  display: flex;
+  padding-top: 250px !important;
   color: #273B4A !important;
+}
+
+.each-ref {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+}
+
+.ref-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-section {
@@ -146,7 +177,7 @@ ul.custom-bullets li::before {
   border-radius: 50%; /* Make it round */
 }
 
-p {
+.main-content {
   font-family: 'Montserrat', 'Helvetica';
   padding-left: 30%;
   color: #273B4A;

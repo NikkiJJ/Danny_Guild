@@ -36,7 +36,7 @@
                   <a class="nav-link custom-nav-link" id="contactLink" href="#contact">Contact Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="#references">References</a>
+                    <a class="nav-link custom-nav-link" id="referenceLink" href="#references">References</a>
                 </li>
             </ul>
         </div>
@@ -52,6 +52,51 @@
         <h4><img src="phone.png" alt="icon">Phone: +1234567890</h4>
       </div>
     </div>
+
+    <div id="reference-overlay">
+      <div class="hidden-elements">
+        <div class="ref-container">
+          <div class="each-ref">
+            <h3 class="contact-deet">Scott Wishart</h3>
+            <p class="contact-deet">C/E on Stardust</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +44 782 522 3500</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">wishartscott@ymail.com</p>
+          </div>
+          <div class="each-ref">
+            <h3 class="contact-deet">Jordan Lewis Hodge</h3>
+            <p class="contact-deet">C/E on White Star</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +34 618 180 818</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">jordanlewishodge@me.com</p>
+          </div>
+          <div class="each-ref">
+            <h3 class="contact-deet">Aldrey Francis</h3>
+            <p class="contact-deet">C/E on White Star</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +1305 440 8059</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">aldreyfrancis@gmail.com</p>
+          </div>
+          <div class="each-ref">
+            <h3 class="contact-deet">Duncan McQuire</h3>
+            <p class="contact-deet">C/E on White Star</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +44 778 626 5297</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">duncan.mcquire.net</p>
+          </div>
+          <div class="each-ref">
+            <h3 class="contact-deet">Tsvetan Radev</h3>
+            <p class="contact-deet">C/E on White Star</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +35 988 920 2303</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">tsveten@gmail.com</p>
+          </div>
+          <div class="each-ref">
+            <h3 class="contact-deet">Jon Lai-Fang</h3>
+            <p class="contact-deet">C/E on White Star</p>
+            <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +44 797 606 8242</p>
+            <p class="contact-deet"><img src="small-envelope.png" alt="icon">jon.lai-fan@hotmail.com</p>
+          </div>
+       </div>
+      </div>
+    </div>
+
+
 
     <div class="top-section">
       <div class="top-left">
@@ -73,15 +118,15 @@
     <div class="bottom-section">
       <div>
         <h5 class="headings">INFORMATION</h5>
-        <p>SV 2nd Engineer 9000Kw 3000Gt</p>
-        <p>DOB: 1st March 1990</p>
-        <p>Nationality: British - Austrian passport - Visa: B1</p>
-        <p>Location: Europe</p>
-        <p>Non-smoker, Excellent Health, No Visable Tattoos</p>
+        <p class="main-content">SV 2nd Engineer 9000Kw 3000Gt</p>
+        <p class="main-content">DOB: 1st March 1990</p>
+        <p class="main-content">Nationality: British - Austrian passport - Visa: B1</p>
+        <p class="main-content">Location: Europe</p>
+        <p class="main-content">Non-smoker, Excellent Health, No Visable Tattoos</p>
       </div>
       <div>
         <h5 class="headings">ABOUT ME</h5>
-        <p>I'm someone who truely enjoys what I do, approaching my work with a strong ethic and a practical, logical mindset. I'm organised
+        <p class="main-content">I'm someone who truely enjoys what I do, approaching my work with a strong ethic and a practical, logical mindset. I'm organised
           and take pride in my work, always seeking ways to improve and grow as an engineer. My hands-on approach to problem solving is one
           of my key strengths, and my experience working on yachts has set high standards for what I expect in a professional environment.
           Safety and efficiency are my top prioritys, amd I'm eager to join a team that shares these values.
@@ -203,7 +248,7 @@
           <h5>2nd Engineer M/Y Stardust</h5>
           <h6>(1161Gt 63m Amels)</h6>
           <h6>May 2021 - Present Day</h6>
-          <p>Since joining stardust, I have been fortunate enough to work with amazing crew and learnt so much while developing
+          <p class="main-content">Since joining stardust, I have been fortunate enough to work with amazing crew and learnt so much while developing
             my skills and travelling the world from Thailand to Australia to Norway and the Med. With the covid restriction, we
             had problems when warrenty work arises while working cloesly with the after sales team at Amels. We carried out the
             warrenty work with parts and additional knowledge procided by Amels. We built a good working relationship with the team
@@ -228,11 +273,24 @@
 
         contactLink.addEventListener('click', function(event) {
             event.preventDefault();
-            console.log('Link was clicked!');
+            console.log('Contact link was clicked!');
             if (overlay.style.display === 'none' || overlay.style.display === '') {
                 overlay.style.display = 'block';
             } else {
                 overlay.style.display = 'none';
+            }
+        });
+
+        var referenceLink = document.getElementById('referenceLink');
+        var referenceOverlay = document.getElementById('reference-overlay');
+
+        referenceLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('References link was clicked!');
+            if (referenceOverlay.style.display === 'none' || referenceOverlay.style.display === '') {
+                referenceOverlay.style.display = 'block';
+            } else {
+                referenceOverlay.style.display = 'none';
             }
         });
     });
