@@ -53,7 +53,7 @@
   top: 60px;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 300px;
   background-color: #C5D1E4;
   background-image: url('top-graphic.png');
   background-size: cover;
@@ -69,7 +69,7 @@
   top: 60px;
   left: 0;
   width: 100%;
-  height: 700px;
+  height: 500px;
   background-color: #C5D1E4;
   background-image: url('top-graphic.png');
   background-size: cover;
@@ -81,9 +81,18 @@
 
 
 .hidden-elements {
-  display: flex;
-  padding-top: 250px !important;
+  padding-top: 200px !important;
   color: #273B4A !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
 }
 
 .each-ref {
@@ -96,7 +105,7 @@
 
 .ref-container {
   width: 100%;
-  height: 700px;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -152,6 +161,13 @@
 .topics {
   display: flex;
   padding-left: 30%;
+  gap: 20px;
+}
+
+.topics-bottom {
+  display: flex;
+  padding-left: 30%;
+  gap: 80px;
 }
 
 ul.custom-bullets {
