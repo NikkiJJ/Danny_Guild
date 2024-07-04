@@ -54,38 +54,38 @@
       <div class="hidden-elements">
         <div class="ref-container">
           <div class="each-ref">
-            <h3 class="contact-deet">Scott Wishart</h3>
+            <h3 class="contact-deet name">Scott Wishart</h3>
             <p class="contact-deet">C/E on Stardust</p>
             <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +44 782 522 3500</p>
             <p class="contact-deet"><img src="small-envelope.png" alt="icon">wishartscott@ymail.com</p>
           </div>
           <div class="each-ref">
-            <h3 class="contact-deet">Jordan Lewis Hodge</h3>
+            <h3 class="contact-deet name">Jordan Lewis Hodge</h3>
             <p class="contact-deet">C/E on White Star</p>
             <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +34 618 180 818</p>
             <p class="contact-deet"><img src="small-envelope.png" alt="icon">jordanlewishodge@me.com</p>
           </div>
           <div class="each-ref">
-            <h3 class="contact-deet">Aldrey Francis</h3>
+            <h3 class="contact-deet name">Aldrey Francis</h3>
             <p class="contact-deet">C/E on White Star</p>
             <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +1305 440 8059</p>
             <p class="contact-deet"><img src="small-envelope.png" alt="icon">aldreyfrancis@gmail.com</p>
           </div>
           <div class="each-ref">
-            <h3 class="contact-deet">Tsvetan Radev</h3>
+            <h3 class="contact-deet name">Tsvetan Radev</h3>
             <p class="contact-deet">C/E on White Star</p>
             <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +35 988 920 2303</p>
             <p class="contact-deet"><img src="small-envelope.png" alt="icon">tsveten@gmail.com</p>
           </div>
           <div class="each-ref">
-            <h3 class="contact-deet">Jon Lai-Fang</h3>
+            <h3 class="contact-deet name">Jon Lai-Fang</h3>
             <p class="contact-deet">C/E on White Star</p>
             <p class="contact-deet"><img src="small-phone.png" alt="Icon"> +44 797 606 8242</p>
             <p class="contact-deet"><img src="small-envelope.png" alt="icon">jon.lai-fan@hotmail.com</p>
           </div>
        </div>
        <div class="download-container">
-        <a class="nav-link custom-nav-link" href="path/to/your/CV.pdf" download>
+        <a class="nav-link custom-nav-link" id="downloadReferencesButton" href="javascript:void(0);">
           <img src="File_fill.png" alt="Download" style="height:20px; width:auto; vertical-align:middle; margin-right:5px;">
           Download References
         </a>
@@ -293,6 +293,35 @@
         });
     });
   </script>
+
+  <script>
+    document.getElementById('downloadReferencesButton').addEventListener('click', function() {
+      // Array of file URLs
+      const files = [
+        'loladref.pdf',
+        'renewalref.jpg',
+        'whitestarref1.pdf',
+        'whitestarref2.pdf'
+      ];
+
+      // Function to trigger download
+      const downloadFile = (url) => {
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = url.split('/').pop(); // Extract the file name from the URL
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      };
+
+      // Loop through the files and trigger the download
+      files.forEach(file => {
+        downloadFile(file);
+      });
+    });
+  </script>
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
