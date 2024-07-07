@@ -1,4 +1,4 @@
-/* Prevent horizontal scrolling */
+
 body {
   overflow-x: hidden !important;
 }
@@ -7,10 +7,10 @@ body {
   background-color: #F7F5F2;
   border-bottom: 1px solid #273B4A !important;
   padding: 40px 20px 40px 20px;
-  position: fixed;  /* Make the navbar fixed to the top of the viewport */
-  top: 0;           /* Align the top edge of the navbar with the top edge of the viewport */
-  width: 100%;      /* Ensure the navbar stretches across the full width of the viewport */
-  z-index: 1000;    /* Ensures the navbar stays on top of other content */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #nav-sig {
@@ -45,9 +45,9 @@ body {
 .page-container {
   background-color: #F7F5F2;
   padding: 20px;
-  margin: 0; /* Remove auto margin to prevent any potential centering issues */
-  width: 100%; /* Ensure it takes the full width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #contactInfo {
@@ -112,11 +112,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px; /* Adjust padding as needed */
-  margin: 10px; /* Adds some spacing between the items */
-  flex: 1; /* Makes each reference item flexible */
-  min-width: 0; /* Prevents flex items from shrinking below their content size */
-  box-sizing: border-box; /* Ensures padding and border are included in width */
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .ref-container {
@@ -152,30 +152,29 @@ body {
   padding: 60px;
   color: #273B4A;
   display: flex;
-  flex-direction: column; /* Aligns children in a column */
-  /* text-align: centr; Centers the text within the div */
+  flex-direction: column;
 }
 
 .image-container {
-  width: 50%; /* Set your desired width */
-  height: 500px; /* Set your desired height */
+  width: 50%;
+  height: 500px;
   background-image: url('background-image.png');
-  background-size: cover; /* Adjusts the background image to cover the entire div */
-  background-position: center; /* Centers the background image */
+  background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .inner-container {
-  width: 80%; /* Adjust this to control the size of the inner container */
-  height: 80%; /* Adjust this to control the size of the inner container */
+  width: 80%;
+  height: 80%;
   position: relative;
 }
 .inner-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  object-fit: contain;
   display: block;
 }
 
@@ -201,14 +200,14 @@ body {
 }
 
 ul.custom-bullets {
-  list-style: none; /* Remove default bullets */
-  padding-left: 20px; /* Adjust as needed */
+  list-style: none;
+  padding-left: 20px;
 }
 
 ul.custom-bullets li {
   position: relative;
-  padding-left: 20px; /* Adjust as needed */
-  margin-bottom: 10px; /* Adjust as needed */
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 ul.custom-bullets li::before {
@@ -217,10 +216,10 @@ ul.custom-bullets li::before {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 0.2em; /* Adjust size */
-  height: 0.2em; /* Adjust size */
-  background-color: #aaa; /* Adjust color */
-  border-radius: 50%; /* Make it round */
+  width: 0.2em;
+  height: 0.2em;
+  background-color: #aaa;
+  border-radius: 50%;
 }
 
 .main-content {
@@ -261,7 +260,6 @@ h6 {
 }
 
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .navbar-custom {
     flex-direction: column;
@@ -284,60 +282,60 @@ h6 {
 
   .nav-item {
     padding: 0px;
-    width: 80%; /* Ensure nav items fit within viewport */
-    text-align: center; /* Center-align the text */
+    width: 80%;
+    text-align: center;
   }
 
   .custom-nav-link {
     padding: 5px 10px;
-    font-size: 0.8em; /* Adjust the font size as needed */
-    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 0.8em;
+    white-space: nowrap;
   }
 
   .custom-nav-link img {
-    height: 14px; /* Adjust the image size as needed */
+    height: 14px;
     width: auto;
     margin-right: 3px;
   }
 
 
   .page-container {
-    padding: 10px; /* Adjust padding for smaller screens */
-    margin: 0 !important; /* Ensure no margin around the container */
-    width: 100% !important; /* Ensure it fits within the viewport */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 
   .top-section, .bottom-section, .topics, .topics-bottom {
-    padding-left: 10px; /* Adjust padding for smaller screens */
-    padding-right: 10px; /* Adjust padding for smaller screens */
-    width: 100% !important; /* Ensure sections fit within viewport */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 
   .main-content, .headings, h4, h5, h6 {
-    padding-left: 10px; /* Adjust padding for smaller screens */
-    padding-right: 10px; /* Adjust padding for smaller screens */
-    width: 100%; /* Ensure content fits within viewport */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .topics, .topics-bottom {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     align-items: flex-start;
-    padding-left: 10px; /* Adjust padding for smaller screens */
-    padding-right: 10px; /* Adjust padding for smaller screens */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .custom-bullets {
-    width: 100%; /* Full width for each list on small screens */
-    padding-left: 20px; /* Add padding to the left for better readability */
+    width: 100%;
+    padding-left: 20px;
   }
 
   .top-section {
-    flex-direction: row; /* Keep elements side by side */
-    /* flex-wrap: wrap;  */
-    justify-content: center; /* Center the content horizontally */
+    flex-direction: row;
+
+    justify-content: center;
     padding: 10px;
   }
 
@@ -371,19 +369,12 @@ h6 {
     font-size: 1em;
   }
 
-
-  /* .contact-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  } */
-
   .contact-container {
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure container takes full width */
-    padding-left: 20px; /* Add some padding for better alignment */
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
   }
 
   .hidden-elements {
@@ -400,37 +391,37 @@ h6 {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    max-height: calc(80vh - 150px); /* Adjusted height to show more references */
-    width: 100%; /* Ensure full width */
+    max-height: calc(80vh - 150px);
+    width: 100%;
   }
 
   .each-ref {
     text-align: center;
-    margin-bottom: 20px; /* Add some space between references */
+    margin-bottom: 20px;
   }
 
   .download-container {
-    margin-top: auto; /* Pushes the button to the bottom */
+    margin-top: auto;
     padding-top: 20px;
-    margin-top: 50px;/* Add some padding at the top if needed */
+    margin-top: 50px;
   }
 
   .topics, .topics-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px; /* Adjust padding for smaller screens */
-    gap: 5px; /* Reduce the gap between lists */
+    padding: 10px;
+    gap: 5px;
   }
 
   .custom-bullets {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    padding-left: 10px; /* Add a small padding to the left for better readability */
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
   }
 
   .custom-bullets li {
-    margin-bottom: 5px; /* Adjust the spacing between list items */
+    margin-bottom: 5px;
   }
 
 }
