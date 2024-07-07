@@ -101,6 +101,11 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+  gap: 20px;
+}
+
+.contact-text {
+  font-weight: lighter;
 }
 
 .each-ref {
@@ -367,10 +372,18 @@ h6 {
   }
 
 
-  .contact-container {
+  /* .contact-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  } */
+
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure container takes full width */
+    padding-left: 20px; /* Add some padding for better alignment */
   }
 
   .hidden-elements {
